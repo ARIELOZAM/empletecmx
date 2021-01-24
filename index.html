@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Applicacion de Generacion de Datos de Usuario</title>
+</head>
+<bo>
+   
+    <div class="top-header">
+      <h2>Ingrese los datos del usuario</h2>
+       <form action="">
+           <label for="name">Nombre</label>
+           <input type="text" id="name"> <br>
+           <label for="lastName">Apellido</label>
+           <input type="text" id="lastName"> <br>
+           <label for="positionTitle">Puesto</label>
+           <input type="text" id="positionTitle">
+       </form>
+        <button type="button" onclick="fichaUsuario()"> Agregar Usuario</button>
+    </div>
+       
+       <div>
+         <h2>Buscar Usuarios</h2>
+          <form action="">
+              <input type="search" id="buscador">
+              <button type="button" onclick="buscadorWorkers()">Buscar</button>
+          </form>
+          
+          <div id="employeeDataShow">
+              <p>Datos; <span></span> <span></span> <span></span></p>
+          </div>
+           <table>
+           <thead>
+            <tr>
+               <th>Nombre de los usuarios</th>
+               <th>Apellido de los usuarios</th>
+               <th>Puesto de Trabajo</th>
+           </tr>
+           </thead>
+                <tbody id="dataBox">
+                   
+               </tbody>
+           </table>
+       </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
